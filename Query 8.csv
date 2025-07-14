@@ -1,0 +1,4 @@
+project_name,company_name,sector_name,start_date,completion_date,estimated_cost_aed,status
+"Dubai Creek Harbour","Emaar Properties","Real Estate",2016-01-01,NULL,75000.00,Ongoing
+"Emirates Fleet Expansion","Emirates Group",Aviation,2022-01-01,NULL,45000.00,Ongoing
+"Jebel Ali Port Expansion","DP World",Logistics,2021-01-01,2025-12-31,18000.00,Ongoing
