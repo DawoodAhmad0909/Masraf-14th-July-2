@@ -211,7 +211,8 @@ WHERE
 	p.status !='Completed'
     AND p.completion_date < CURDATE()
 GROUP BY c.company_name
-ORDER BY delayed_projects DESC;
+ORDER BY delayed_projects DESC
+LIMIT 1;
 
 -- 10-Calculate the total estimated cost of all real estate projects under development.
 SELECT 
