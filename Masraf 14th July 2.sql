@@ -207,8 +207,9 @@ SELECT
     ROUND(AVG(DATEDIFF(CURDATE(), p.completion_date)), 2) AS avg_days_delayed
 FROM projects p
 JOIN companies c ON c.company_id = p.company_id
-WHERE p.completion_date IS NOT NULL
-  AND p.completion_date < CURDATE()
+WHERE 
+	p.status !='Completed'
+    AND p.completion_date < CURDATE()
 GROUP BY c.company_name
 ORDER BY delayed_projects DESC;
 
